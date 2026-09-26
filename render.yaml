@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: eaglercraft-wss-proxy
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: TARGET_HOST
+        value: Davi_Gabriel__.aternos.me
+      - key: TARGET_PORT
+        value: "15630"

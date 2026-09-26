@@ -1,0 +1,16 @@
+{
+  "name": "eaglercraft-wss-proxy",
+  "version": "1.0.0",
+  "description": "Proxy WebSocket Secure (WSS) que liga um cliente Eaglercraft 1.8.8 a um servidor Minecraft Java (ex: Aternos)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "license": "MIT"
+}
