@@ -1,9 +1,11 @@
 services:
   - type: web
     name: eaglercraft-wss-proxy
-    env: docker
+    env: node
     plan: free
-    dockerfilePath: ./Dockerfile
+    region: oregon
+    buildCommand: npm install
+    startCommand: node index.js
     healthCheckPath: /
     envVars:
       - key: TARGET_HOST
